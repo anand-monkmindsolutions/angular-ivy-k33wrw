@@ -7,13 +7,21 @@ import { FormControl, FormGroup, RequiredValidator,  Validators } from '@angular
   styleUrls: ['./forms-component.component.css']
 })
 export class FormsComponentComponent implements OnInit {
+
+private var welcomeRef: string;
+
+
 profileForm=new FormGroup({
-name: new FormControl('',
+username: new FormControl('',
   Validators.required),
-password: new FormControl('')
+password: new FormControl(''),
+age: new FormControl(''),
+name: new FormControl(''),
+address: new FormControl(''),
 })
 
-  ngOnInit() {
+  welcome(){
+   welcomeRef="Welcome"+name;
   }
 
 }

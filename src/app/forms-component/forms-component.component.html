@@ -1,7 +1,21 @@
 
+
+
+<h1>Reactive Form</h1>
 <form [formGroup]=profileForm>
-<label>User Name</label>
-<input type="text" formControlName=name><br>
-<label>Password</label>
-<input type="password" formControlName=name>
+  <label>Name
+<input type="text" formControlName=name></label><br>
+<label>Age
+<input type="number" formControlName=age></label><br>
+<label>Address
+<input type="text" formControlName=address></label><br>
+<label>User Name
+<input type="text" formControlName=username></label><br>
+<label>Password
+<input type="password" formControlName=password></label><br>
+<button (click)="welcome()">Sign Up</button>
 </form>
+<pre>
+{{profileForm.value|json}}
+</pre>
+{{welcomeRef}}
