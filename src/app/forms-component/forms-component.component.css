@@ -2,3 +2,19 @@ label {
   margin-right: 15rpm;
   padding-bottom: 5px;
 }
+
+.profile-form{
+  padding:10px;  
+}
+
+.profile-form div{
+  margin-bottom:5px;  
+} 
+
+.profile-form div:last-child{
+  padding-top:20px;  
+} 
+
+.profile-form div label{
+ display:block;
+} 

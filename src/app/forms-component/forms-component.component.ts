@@ -6,9 +6,9 @@ import { FormControl, FormGroup, RequiredValidator,  Validators } from '@angular
   templateUrl: './forms-component.component.html',
   styleUrls: ['./forms-component.component.css']
 })
-export class FormsComponentComponent implements OnInit {
+export class FormsComponentComponent  {
 
-private var welcomeRef: string;
+public welcomeRef: string="";
 
 
 profileForm=new FormGroup({
@@ -21,7 +21,7 @@ address: new FormControl(''),
 })
 
   welcome(){
-   welcomeRef="Welcome"+name;
+   this.welcomeRef="Welcome "+name;
   }
 
 }
